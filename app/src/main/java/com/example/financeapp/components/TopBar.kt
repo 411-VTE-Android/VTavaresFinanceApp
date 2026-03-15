@@ -82,7 +82,7 @@ fun TopBar(user: User) {
     }
 }
 
-@Preview(showBackground = true, backgroundColor = 0xFFF8F9FA)
+@Preview(showBackground = true)
 @Composable
 fun TopBarPreview() {
     TopBar(user = currentUser)
