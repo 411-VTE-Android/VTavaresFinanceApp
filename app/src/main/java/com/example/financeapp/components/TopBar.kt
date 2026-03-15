@@ -72,7 +72,7 @@ fun TopBar(user: User) {
                 color = SecondaryTextGrey
             )
             Text (
-                text = "Saldo total: $${user.currentBalance}",
+                text = "Saldo total: $${user.currentBalance}${0}",
                 fontSize = 14.sp,
                 color = PrimaryTextBlack,
                 fontWeight = FontWeight.Bold,

@@ -11,6 +11,6 @@ data class SummaryCard (
 )
 
 val summaryCardsData = listOf(
-    SummaryCard("Ventas",280.99,SalesCardOrange),
-    SummaryCard("Ganancias", 280.99, ProfitsCardPurple)
+    SummaryCard("Ventas",850.00,SalesCardOrange),
+    SummaryCard("Ganancias", 850.00, ProfitsCardPurple)
 )
