@@ -5,5 +5,5 @@ data class User (
     val currentBalance: Double
 )
 
-val currentUser = User ("VIctor",10500.0
+val currentUser = User ("Victor",10500.0
 )
