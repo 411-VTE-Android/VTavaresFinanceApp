@@ -35,8 +35,7 @@ fun TopBar(user: User) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 20.dp, vertical = 16.dp),
-        verticalAlignment = Alignment.CenterVertically
+            .padding(horizontal = 20.dp, vertical = 16.dp)
     ) {
         Box(
             modifier = Modifier
@@ -56,28 +55,39 @@ fun TopBar(user: User) {
 
         Spacer(modifier = Modifier
             .width(12.dp))
-        Column{
-            Text(
+        Column (
+            modifier = Modifier
+                .weight(1f)
+                .padding(top = 4.dp)
+        ){
+            Text (
                 text = "Hola ${user.name}",
                 fontSize = 25.sp,
                 fontWeight = FontWeight.ExtraBold,
                 color = PrimaryTextBlack
             )
-            Text(
+            Text (
                 text = "Bienvenido",
                 fontSize = 15.sp,
                 color = SecondaryTextGrey
             )
+            Text (
+                text = "Saldo total: $${user.currentBalance}",
+                fontSize = 14.sp,
+                color = PrimaryTextBlack,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .padding(top = 5.dp)
+            )
         }
 
-        Spacer(modifier = Modifier
-            .weight(1f))
         Icon(
             imageVector = Icons.Rounded.Menu,
             contentDescription = "menu",
             tint = PrimaryTextBlack,
             modifier = Modifier
                 .size(32.dp)
+                .padding(top = 11.dp)
         )
     }
 }
